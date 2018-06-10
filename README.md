@@ -12,8 +12,8 @@ To have reusable `Markdown` pages, these template files support variables.
 
 ## Usage
 
- * Install `[predown]`
- * Create TOML configuration (see `config/example.toml`)
+ * Install [`predown`](https://github.com/sbstjn/predown)
+ * Create TOML configuration (see [`config/example.toml`](config/example.toml))
  * Download Markdown sources (aka fork this repository)
 
 ## Processing
@@ -35,7 +35,7 @@ Done: src/en/privacy.md -> dist/privacy.md
 
 ### Configuration
 
-See `config/example.toml` for an example of the full configuration set:
+See [`config/example.toml`](config/example.toml) for an example of the full configuration set:
 
 ```toml
 [Contact]
