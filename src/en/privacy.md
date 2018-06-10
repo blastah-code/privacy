@@ -53,7 +53,7 @@ I use disclose Information about you or that you provide to me, including any Pe
 
 ## Accessing and Correcting Your Information
 
-You have the right to know whether your Personal Information has been stored and can consult with me about any Personal Information to verify the accuracy of such Information. The Information can be supplemented, canceled, updated, or corrected. For its transformation into anonymous format or to block any data held in violation of the law, requests should be sent to me by email at [{{ .Contact.Address }}]. All Information will be retained and used, as necessary, to comply with legal obligations, resolve disputes, and enforce agreements.
+You have the right to know whether your Personal Information has been stored and can consult with me about any Personal Information to verify the accuracy of such Information. The Information can be supplemented, canceled, updated, or corrected. For its transformation into anonymous format or to block any data held in violation of the law, requests should be sent to me by email at [{{ .Contact.Mail }}]. All Information will be retained and used, as necessary, to comply with legal obligations, resolve disputes, and enforce agreements.
 
 ## Data Security
 
@@ -61,7 +61,7 @@ The security of your Personal Information is critical. I have implemented reason
 
 ## Children’s Personal Information
 
-I do not knowingly collect or solicit Personal Information from anyone under the age of 16. If you are under 16, please do send or submit any Information about yourself to me. Parents and legal guardians are encouraged to monitor the activities of their wards in this regard. If I learn that I have collected Information from a child under age 16, I will delete that Information as quickly as possible. If you believe that a child under 16 may have provided me Information, please contact me at [{{ .Contact.Address }}].
+I do not knowingly collect or solicit Personal Information from anyone under the age of 16. If you are under 16, please do send or submit any Information about yourself to me. Parents and legal guardians are encouraged to monitor the activities of their wards in this regard. If I learn that I have collected Information from a child under age 16, I will delete that Information as quickly as possible. If you believe that a child under 16 may have provided me Information, please contact me at [{{ .Contact.Mail }}].
 
 ## Changes to this Privacy Policy
 
@@ -71,7 +71,7 @@ I reserve the right to make any necessary changes to this Policy at any time and
 
 ### Cookies
 
-Please read the [Cookie Policy] for more information about how this website uses Cookies.
+Please read the [Cookies Policy] for more information about how this website uses Cookies.
 
 ### CloudFlare
 
