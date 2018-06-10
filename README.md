@@ -14,7 +14,7 @@ To have reusable `Markdown` pages, these template files support variables.
 
  * Install [`predown`](https://github.com/sbstjn/predown)
  * Create TOML configuration file
- * Download latest [GitHub Release](releases)
+ * Download latest [GitHub Release](https://github.com/sbstjn/privacy/releases)
 
 ## Processing
 
