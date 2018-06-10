@@ -1,3 +1,13 @@
+{{ define "table" }}
+
+| Name | Purpose | Term |
+| ---- | ------- | ---- |
+{{- range . }}
+| {{ .Name }} | {{ .Info }} | {{ .Expires }} |
+{{- end }}
+
+{{- end -}}
+
 # Cookie Policy
 
 With this Cookie Policy, I inform you about the use of cookies and other similar storage technologies (hereafter called "Cookies") on this website.
@@ -12,7 +22,7 @@ Through the stored and sent back information, the respective website detects tha
 
 Cookies that are not strictly necessary to provide the services on this website will only be used after you have given your consent to their use. As soon as you use this website actively, you give your permission to the use of Cookies.
 
-You may customize your [Cookie Settings] any time by activating or deactivating the different categories. For more information on how to generally disable Cookies on your browser (including Strictly Necessary Cookies), please see the documentation or manual of your browser.
+You may customize your [Cookies Settings] any time by activating or deactivating the different categories. For more information on how to generally disable Cookies on your browser (including Strictly Necessary Cookies), please see the documentation or manual of your browser.
 
 ## Types of Cookies
 
@@ -31,21 +41,29 @@ Strictly Necessary Cookies are used for instance to keep you logged in as a user
 
 The use of Strictly Necessary Cookies on this website is possible without your consent. Therefore, Strictly Necessary Cookies cannot be separately activated or deactivated. This function is only available for Cookies that require your prior consent, thus Functional, Performance and Marketing Cookies.
 
-This website uses the following Strictly Necessary Cookies:
+{{ if .Cookies.Necessary) -}}
+  The following Strictly Necessary Cookies are used on this website:
 
-[[ cookies type="necessary" ]]
+  {{- template "table" .Cookies.Necessary -}}
+{{- else -}}
+  This website does not use Strictly Necessary Cookies.
+{{- end }}
 
-However, you will always have the possibility to generally deactivate all Cookies in your browser settings (see Section 4 below).
+However, you will always have the possibility to generally deactivate all Cookies in your browser settings.
 
 ### Functional Cookies
 
 Functional Cookies enable this website to store information previously provided by you (such as registered name or selected language) and to offer you improved and personalized features based thereon. These Cookies only collect and store anonymized information, so that they cannot track your movements on other websites.
 
-This website uses the following Functional Cookies:
+{{ if .Cookies.Functional) -}}
+  The following Functional Cookies are used on this website:
 
-[[ cookies type="functional" ]]
+  {{- template "table" .Cookies.Functional -}}
+{{- else -}}
+  This website does not use Functional Cookies.
+{{- end }}
 
-You may object to the use of Functional Cookies at any time by customizing your [Cookie Settings] accordingly.
+You may object to the use of Functional Cookies at any time by customizing your [Cookies Settings] accordingly.
 
 ### Performance Cookies
 
@@ -53,17 +71,21 @@ Performance Cookies collect information on how this website is used for me to im
 
 As a consequence, I can adjust the content of this website to meet the specific needs of all visitors and optimize this service. IP addresses, which have to be transmitted due to technical reasons, are automatically anonymized, and therefore no link to individual users may be drawn.
 
-This website uses the following Performance Cookies:
+{{ if .Cookies.Performance) -}}
+  The following Performance Cookies are used on this website:
 
-[[ cookies type="performance" ]]
+  {{- template "table" .Cookies.Performance -}}
+{{- else -}}
+  This website does not use Performance Cookies.
+{{- end }}
 
-You may object to the use of Performance Cookies at any time by customizing your [Cookie Settings] accordingly.
+You may object to the use of Performance Cookies at any time by customizing your [Cookies Settings] accordingly.
 
 ### Marketing Cookies / Third Party Cookies
 
 Marketing Cookies are set by external advertising companies (Third Party Cookies) and will be used to gather information about the user’s visited websites to create targeted advertising to the user.
 
-You may object to the use of Marketing Cookies at any time by customizing your [Cookie Settings] accordingly.
+You may object to the use of Marketing Cookies at any time by customizing your [Cookies Settings] accordingly.
 
 ## Administration and deletion of cookies
 
@@ -71,4 +93,4 @@ Furthermore, you may change the settings of your internet browser to prevent the
 
 Please note that a general deactivation of the use of Cookies might lead to a restriction of this website´s functionality.
 
-[Cookie Settings]: /cookies/settings
+[Cookies Settings]: {{ .Links.Cookies.Settings }}

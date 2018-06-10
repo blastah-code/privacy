@@ -24,4 +24,4 @@ Performance Cookies collect information on how this website is used to improve i
 
 Marketing cookies are set by external advertising companies (Third Party Cookies) and will be used to gather information about the user’s visited websites to create targeted advertising to the user. You will find an overview of the Marketing Cookies used on this website in the [Cookie Policy].
 
-[Cookie Policy]: /cookie/policy
+[Cookies Policy]: {{ .Links.Cookies.Policy }}
