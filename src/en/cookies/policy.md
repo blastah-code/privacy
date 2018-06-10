@@ -41,7 +41,7 @@ Strictly Necessary Cookies are used for instance to keep you logged in as a user
 
 The use of Strictly Necessary Cookies on this website is possible without your consent. Therefore, Strictly Necessary Cookies cannot be separately activated or deactivated. This function is only available for Cookies that require your prior consent, thus Functional, Performance and Marketing Cookies.
 
-{{ if .Cookies.Necessary) -}}
+{{ if .Cookies.Necessary -}}
   The following Strictly Necessary Cookies are used on this website:
 
   {{- template "table" .Cookies.Necessary -}}
@@ -55,7 +55,7 @@ However, you will always have the possibility to generally deactivate all Cookie
 
 Functional Cookies enable this website to store information previously provided by you (such as registered name or selected language) and to offer you improved and personalized features based thereon. These Cookies only collect and store anonymized information, so that they cannot track your movements on other websites.
 
-{{ if .Cookies.Functional) -}}
+{{ if .Cookies.Functional -}}
   The following Functional Cookies are used on this website:
 
   {{- template "table" .Cookies.Functional -}}
@@ -71,7 +71,7 @@ Performance Cookies collect information on how this website is used for me to im
 
 As a consequence, I can adjust the content of this website to meet the specific needs of all visitors and optimize this service. IP addresses, which have to be transmitted due to technical reasons, are automatically anonymized, and therefore no link to individual users may be drawn.
 
-{{ if .Cookies.Performance) -}}
+{{ if .Cookies.Performance -}}
   The following Performance Cookies are used on this website:
 
   {{- template "table" .Cookies.Performance -}}
