@@ -10,7 +10,30 @@
 
 To have reusable `Markdown` pages, these template files support variables.
 
-### Example
+## Usage
+
+ * Install `[predown]`
+ * Create TOML configuration (see `config/example.toml`)
+ * Download Markdown sources (aka fork this repository)
+
+## Processing
+
+```bash
+$ > ./predown build \
+    --config ./config/example.toml \
+    --templates ./src/en \
+    --destination ./dist
+
+Using config file ./config/example.toml
+Using templates prefix ./src/en
+Using destination path ./dist
+
+Done: src/en/cookies/policy.md -> dist/cookies/policy.md
+Done: src/en/cookies/settings.md -> dist/cookies/settings.md
+Done: src/en/privacy.md -> dist/privacy.md
+````
+
+### Configuration
 
 See `config/example.toml` for an example of the full configuration set:
 
@@ -50,3 +73,5 @@ Name = "performance_cookie"
 Info = "Description for performance cookie"
 Expires = "100m"
 ```
+
+[predown]: https://github.com/sbstjn/predown
