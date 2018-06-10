@@ -1,10 +1,10 @@
 [Contact]
 
-Address = "Lorem Ipsum\n126 Silver Maple Ave\nCle Elum, Washington (WA), 98922"
-Phone = "+1-202-555-0111"
 Mail = "privacy@example.com"
 
 [Links]
+
+Privacy = "/privacy.html"
 
 [Links.Cookies]
 

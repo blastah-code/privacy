@@ -81,17 +81,6 @@ To ensure optimal performance and have the most efficient way to host and serve 
 
 For monitoring website performance, I use the services offered by [Gauges]. Please see their privacy policy for any questions regarding their services. You can disable the performance analytics for your website visits using the [Cookie Settings].
 
-## Contact Information
-
-To ask questions or comment about this Privacy Policy and the privacy practices, contact me at:
-
-{{ .Contact.Address }}
-
-{{ .Contact.Phone }}
-[{{ .Contact.Mail }}]
-
---
-
 [Cookies Policy]: {{ .Links.Cookies.Policy }}
 [{{ .Contact.Mail }}]: mailto:{{ .Contact.Mail }}
 [CloudFlare]: https://www.cloudflare.com/privacypolicy/
